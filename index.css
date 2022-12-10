@@ -1,0 +1,415 @@
+*{
+  cursor: url('img/cursor.png'), auto;
+  font-family: 'Alexandria';
+}
+
+body {
+  overflow: hidden;
+  background-image:url('img/stars.png');
+  background-attachment: fixed;
+}
+
+h1{
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom:-1%;
+}
+
+p{
+  font-size: 0.9em;
+  font-weight: 300;
+  margin-bottom:3vh;
+}
+
+a{
+  font-weight:500;
+  color: #BC96E6;
+  text-decoration: none;
+}
+
+.pijl{
+  width: 4vw;
+
+}
+
+.pijl:hover, .pijlterug:hover{
+  animation: hover 1s infinite ease-in-out;
+}
+
+.pijlterug{
+  width: 4vw;
+  transform: scaleX(-1);
+}
+
+@keyframes hover{
+  0%{
+    scale:1;
+  }
+
+  50%{
+    scale:1.1;
+  }
+
+  100%{
+    scale:1;
+  }
+}
+
+
+/* General settings for each slide */
+/* Position: absolute + transform to ensure the slides don't overlap. Increase by 100vw for each slide */
+.slide_2vakken {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  padding:50px;
+  opacity:0%;
+  animation: fade-in 2s;
+  animation-fill-mode: forwards;
+  display: flex;
+}
+
+.slide_midden{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  padding:50px;
+  opacity:0%;
+  animation: fade-in 2s;
+  animation-fill-mode: forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide_title{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  padding:50px;
+  opacity:0%;
+  animation: fade-in 2s;
+  animation-fill-mode: forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes fade-in {
+  from{
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+
+/* SLIDE 2 VAKKEN */
+.tekstgroot{
+  height:auto;
+  background-image: url('img/tekstgroot.png');
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  background-position: center;
+  width:50%;
+  box-sizing: border-box;
+  padding: 5%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.afbeelding{
+  width:50%;
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+/* SLIDE MIDDEN */
+.tekstmidden{
+  height: auto;
+  background-image: url('img/tekstmedium.png');
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  background-position: center;
+  width:50%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 5%;
+}
+
+.slide_midden a{
+  transform: translateY(-60%);
+}
+
+
+/* SLIDE TITLE */
+.titlebadge{
+  width: 18%;
+  transform: translateY(60%);
+}
+
+.slide_title p{
+  width: 40%;
+  padding-left:5%;
+  padding-right: 5%;
+  text-align: center;
+}
+
+.slide_title a{
+  transform: translateY(-60%);
+}
+
+.tekstmedium{
+  background-image: url('img/tekstmedium.png');
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  background-position: center;
+  padding: 5%;
+}
+
+
+/* SLIDE 1 - Beginpagina */ 
+#slide1{
+  background-image: url('img/planetsss.png');
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position: center;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+#earth{
+  width: 55%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#play img{
+  width: 30%;
+  animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse {
+  0% {
+   transform:scale(0.90);
+  }
+
+  50% {
+    transform:scale(1);
+  }
+
+  100% {
+    transform:scale(0.90);
+  }
+}
+
+#slide1 a{
+  display:flex;
+  justify-content: center;
+  transform: translateY(120%);
+}
+
+/* SLIDE 2 - Identiteit */
+#slide2 {
+  transform: translateX(100vw);
+  background-image: url('img/begin.png');
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+/* SLIDE 3 - Wie ben ik?*/
+#slide3 {
+  transform: translateX(200vw);
+  background-image: url('img/midden1.png');
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+#slide3 .afbeelding{
+  background-image: url('img/collage1.png');
+}
+
+#slide3 .tekstgroot{
+  background-image: url('img/tekstmedium.png');
+  background-size:100% 75%;
+}
+
+/* SLIDE 4 - Wie ben ik als ontwerper?*/
+#slide4 {
+  transform: translateX(300vw);
+  background-image: url('img/midden2.png');
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+#slide4 .afbeelding{
+  background-image: url('img/archetypes.png');
+}
+
+#slide4 .tekstgroot{
+  background-image: url('img/tekstgroot.png');
+  background-size:100% 90%;
+}
+
+/* SLIDE 5 - Huisstijl*/
+#slide5 {
+  transform: translateX(400vw);
+  background-image: url('img/midden3.png');
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  background-position: center;
+
+}
+
+#slide5 .afbeelding{
+  background-image: url('img/stylesheet.png');
+  width: 45%;
+}
+
+#slide5 .tekstgroot{
+  background-image: url('img/tekstgroot.png');
+  background-size:100% 100%;
+  width: 55%;
+}
+
+/* SLIDE 6 - Inspiratie */
+#slide6 {
+  transform: translateX(500vw);
+  background-image: url('img/midden1.png');
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+/* SLIDE 7 - Hoe doe ik inspiratie op?*/
+#slide7 {
+  transform: translateX(600vw);
+  background-image: url('img/midden2.png');
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+#slide7 .tekstgroot{
+  width: 60%;
+  background-image: url('img/tekstmedium.png');
+  background-size:100% 75%;
+}
+
+#slide7 .afbeelding{
+  background-image: url('img/inspo1.png');
+  width:40%;
+}
+
+
+/* SLIDE 8 - Inspiratiebronnen 1*/
+#slide8 {
+  transform: translateX(700vw);
+  background-image: url('img/midden3.png');
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+#slide8 .afbeelding{
+  background-image: url('img/inspiratiecollage.png');
+}
+
+/* SLIDE 9 - Inspiratiebronnen 2*/
+#slide9 {
+  transform: translateX(800vw);
+  background-image: url('img/midden1.png');
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  background-position: center
+}
+
+#slide9 .tekstgroot{
+  width: 60%;
+  background-image: url('img/tekstmedium.png');
+  background-size:100% 75%;
+}
+
+#slide9 .afbeelding{
+  background-image: url('img/inspiratiecollage2.png');
+}
+
+/* SLIDE 10 - Grafische wereld wel */
+#slide10 {
+  transform: translateX(900vw);
+  background-image: url('img/midden2.png');
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+#slide10 .afbeelding{
+  background-image: url('img/gw1.png');
+  width:40%;
+}
+
+#slide10 .tekstgroot{
+  background-size:100% 80%;
+  width:60%;
+}
+
+
+/* SLIDE 11 - Grafische wereld niet */
+#slide11 {
+  transform: translateX(1000vw);
+  background-image: url('img/midden3.png');
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+#slide11 .afbeelding{
+  background-image: url('img/gw2.png');
+  width:40%;
+}
+
+#slide11 .tekstgroot{
+  background-size:100% 80%;
+  width:60%;
+}
+
+/* SLIDE 12 - Lessen*/
+#slide12 {
+  transform: translateX(1100vw);
+  background-image: url('img/midden1.png');
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+#slide12 .afbeelding{
+  background-image: url('img/lessen.png');
+  width:40%;
+}
+
+#slide12 .tekstgroot{
+  background-image: url('img/tekstmedium.png');
+  background-size:100% 60%;
+  width:60%;
+}
