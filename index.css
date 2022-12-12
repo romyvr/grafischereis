@@ -1,24 +1,27 @@
 *{
   cursor: url('img/cursor.png'), auto;
-  font-family: 'Alexandria';
+  font-family: 'Alexandria';;
 }
 
 body {
   overflow: hidden;
-  background-image:url('img/stars.png');
+  background-image:url('img/test5.png');
   background-attachment: fixed;
+  background-size:100% 100%;
 }
 
 h1{
   font-size: 1.5em;
   font-weight: 500;
   margin-bottom:-1%;
+  color:#002147;
 }
 
 p{
   font-size: 0.9em;
   font-weight: 300;
   margin-bottom:3vh;
+  color:#002147;
 }
 
 a{
@@ -27,18 +30,27 @@ a{
   text-decoration: none;
 }
 
-.pijl{
-  width: 4vw;
-
+.navi{
+  width:100%;
+  text-align: center;
 }
 
-.pijl:hover, .pijlterug:hover{
+.pijl{
+  width: 3vw;
+  margin-left: 1%;
+}
+
+.pijl:hover, .pijlterug:hover, .home:hover{
   animation: hover 1s infinite ease-in-out;
 }
 
 .pijlterug{
-  width: 4vw;
+  width: 3vw;
   transform: scaleX(-1);
+  margin-right: 1%;
+}
+.home{
+  width:3vw;
 }
 
 @keyframes hover{
@@ -227,9 +239,54 @@ a{
   transform: translateY(120%);
 }
 
+/* Inhoudsopgave */
+#inhoud {
+  transform: translateX(100vw);
+}
+
+#inhoud{
+  background-image: url('img/tekstgroot.png');
+  background-size:70% 90%;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+#inhoud .tekstmedium{
+  background: none;
+  text-align: center;
+  color:#002147;
+  width: 60%;
+}
+#menu{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+.item{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom:3%;
+}
+.item img{
+  width: 50%;
+  margin-bottom:-20%;
+}
+
+.item h2{
+  color:#002147;
+  font-size:1.2em;
+}
+
+#introtitel{
+  color: #002147;
+  margin-bottom:-5%;
+}
+
+
 /* SLIDE 2 - Identiteit */
 #slide2 {
-  transform: translateX(100vw);
+  transform: translateX(200vw);
   background-image: url('img/begin.png');
   background-size:100% auto;
   background-repeat:no-repeat;
@@ -238,7 +295,7 @@ a{
 
 /* SLIDE 3 - Wie ben ik?*/
 #slide3 {
-  transform: translateX(200vw);
+  transform: translateX(300vw);
   background-image: url('img/midden1.png');
   background-size:100% auto;
   background-repeat:no-repeat;
@@ -251,12 +308,12 @@ a{
 
 #slide3 .tekstgroot{
   background-image: url('img/tekstmedium.png');
-  background-size:100% 75%;
+  background-size:100% 90%;
 }
 
 /* SLIDE 4 - Wie ben ik als ontwerper?*/
 #slide4 {
-  transform: translateX(300vw);
+  transform: translateX(400vw);
   background-image: url('img/midden2.png');
   background-size:100% auto;
   background-repeat:no-repeat;
@@ -274,7 +331,7 @@ a{
 
 /* SLIDE 5 - Huisstijl*/
 #slide5 {
-  transform: translateX(400vw);
+  transform: translateX(500vw);
   background-image: url('img/midden3.png');
   background-size:100% auto;
   background-repeat:no-repeat;
@@ -295,7 +352,7 @@ a{
 
 /* SLIDE 6 - Inspiratie */
 #slide6 {
-  transform: translateX(500vw);
+  transform: translateX(600vw);
   background-image: url('img/midden1.png');
   background-size:100% auto;
   background-repeat:no-repeat;
@@ -304,7 +361,7 @@ a{
 
 /* SLIDE 7 - Hoe doe ik inspiratie op?*/
 #slide7 {
-  transform: translateX(600vw);
+  transform: translateX(700vw);
   background-image: url('img/midden2.png');
   background-size:100% auto;
   background-repeat:no-repeat;
@@ -325,7 +382,7 @@ a{
 
 /* SLIDE 8 - Inspiratiebronnen 1*/
 #slide8 {
-  transform: translateX(700vw);
+  transform: translateX(800vw);
   background-image: url('img/midden3.png');
   background-size:100% auto;
   background-repeat:no-repeat;
@@ -338,7 +395,7 @@ a{
 
 /* SLIDE 9 - Inspiratiebronnen 2*/
 #slide9 {
-  transform: translateX(800vw);
+  transform: translateX(900vw);
   background-image: url('img/midden1.png');
   background-size:100% auto;
   background-repeat:no-repeat;
@@ -357,7 +414,7 @@ a{
 
 /* SLIDE 10 - Grafische wereld wel */
 #slide10 {
-  transform: translateX(900vw);
+  transform: translateX(1000vw);
   background-image: url('img/midden2.png');
   background-size:100% auto;
   background-repeat:no-repeat;
@@ -370,14 +427,15 @@ a{
 }
 
 #slide10 .tekstgroot{
-  background-size:100% 80%;
+  background-size:100% 70%;
+  background-image: url('img/tekstmedium.png');
   width:60%;
 }
 
 
 /* SLIDE 11 - Grafische wereld niet */
 #slide11 {
-  transform: translateX(1000vw);
+  transform: translateX(1100vw);
   background-image: url('img/midden3.png');
   background-size:100% auto;
   background-repeat:no-repeat;
@@ -390,13 +448,14 @@ a{
 }
 
 #slide11 .tekstgroot{
-  background-size:100% 80%;
+  background-size:100% 60%;
+  background-image: url('img/tekstmedium.png');
   width:60%;
 }
 
 /* SLIDE 12 - Lessen*/
 #slide12 {
-  transform: translateX(1100vw);
+  transform: translateX(1200vw);
   background-image: url('img/midden1.png');
   background-size:100% auto;
   background-repeat:no-repeat;
@@ -410,6 +469,182 @@ a{
 
 #slide12 .tekstgroot{
   background-image: url('img/tekstmedium.png');
-  background-size:100% 60%;
+  background-size:100% 90%;
   width:60%;
+}
+
+/* SLIDE 13 - Exploratie */
+#slide13 {
+  transform: translateX(1300vw);
+  background-image: url('img/midden2.png');
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+/* SLIDE 14 - Experimenten*/
+#slide14 {
+  transform: translateX(1400vw);
+  background-image: url('img/midden3.png');
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+#slide14 .afbeelding{
+  background-image: url('img/experiments.png');
+  width:45%;
+}
+
+#slide14 .tekstgroot{
+  background-image: url('img/tekstgroot.png');
+  background-size:100% 100%;
+  width:55%;
+}
+
+/* SLIDE 15 - Onderzoek*/
+#slide15 {
+  transform: translateX(1500vw);
+  background-image: url('img/midden1.png');
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+#slide15 .afbeelding{
+  background-image: url('img/designmuseum.png');
+  width:40%;
+}
+
+#slide15 .tekstgroot{
+  background-image: url('img/tekstgroot.png');
+  background-size:100% 90%;
+  width:60%;
+}
+
+/* SLIDE 16 - Grafisch werkveld*/
+#slide16 {
+  transform: translateX(1600vw);
+  background-image: url('img/midden2.png');
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+#slide16 .tekstgroot{
+  background-image: url('img/tekstgroot.png');
+  background-size:100% 100%;
+  width:60%;
+  text-align: center;
+}
+
+/* SLIDE 17 - Reflectie */
+#slide17 {
+  transform: translateX(1700vw);
+  background-image: url('img/midden3.png');
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+/* SLIDE 18 - Grafische groei 1*/
+#slide18 {
+  transform: translateX(1800vw);
+  background-image: url('img/midden1.png');
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+#slide18 .tekstgroot{
+  background-image: url('img/tekstgroot.png');
+  background-size:100% 100%;
+  width:70%;
+  text-align: center;
+}
+
+/* SLIDE 19 - Grafische groei 2*/
+#slide19 {
+  transform: translateX(1900vw);
+  background-image: url('img/midden2.png');
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+#slide19 .tekstgroot{
+  background-image: url('img/tekstgroot.png');
+  background-size:100% 100%;
+  width:70%;
+  text-align: center;
+}
+
+/* SLIDE 20 - Grafische groei 1*/
+#slide20 {
+  transform: translateX(2000vw);
+  background-image: url('img/midden3.png');
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+#slide20 .tekstgroot{
+  background-image: url('img/tekstgroot.png');
+  background-size:100% 100%;
+  width:70%;
+  text-align: center;
+}
+
+/* SLIDE 21 - Grafische groei 2*/
+#slide21 {
+  transform: translateX(2100vw);
+  background-image: url('img/midden1.png');
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+#slide21 .tekstgroot{
+  background-image: url('img/tekstgroot.png');
+  background-size:100% 100%;
+  width:70%;
+  text-align: center;
+}
+
+/* SLIDE 22 - What comes next? */
+#slide22 {
+  transform: translateX(2200vw);
+  background-image: url('img/eind.png');
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+#slide22 .tekstgroot{
+  background:none;
+  width:60%;
+  text-align: center;
+  align-self:flex-end;
+}
+
+#eindtekst{
+  background-image: url('img/tekstgroot.png');
+  background-size:100% 100%;
+  padding-left:8%;
+  padding-right: 8%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+#slide22 .slide_midden{
+  text-align: center;
+}
+
+#gif{
+  width:40%;
+  margin:auto;
+}
+
+#slide22 .navi{
+  margin:auto;
 }
